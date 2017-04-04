@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/start_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start cash"/>
+
+
+    <Button
+        android:id="@+id/start_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start subject"/>
+    <TextView
+        android:id="@+id/result_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/subject_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mAsyncSubject"/>
+    <TextView
+        android:id="@+id/result_secind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/start_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mBehaviorSubject"/>
+    <TextView
+        android:id="@+id/result_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/start_forth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mReplaySubject"/>
+    <TextView
+        android:id="@+id/result_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

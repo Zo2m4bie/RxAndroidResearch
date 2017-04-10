@@ -1,5 +1,18 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
 
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.6.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -28,7 +41,10 @@ android {
         yan{
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -36,8 +52,14 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'io.reactivex:rxandroid:1.2.1'
-    compile 'io.reactivex:rxjava:1.1.6'
+    dimaCompile 'io.reactivex:rxandroid:1.2.1'
+    dimaCompile 'io.reactivex:rxjava:1.1.6'
+    sashaCompile 'io.reactivex:rxandroid:1.2.1'
+    sashaCompile 'io.reactivex:rxjava:1.1.6'
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
+    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.3.0'
+    yanCompile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    yanCompile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    yanCompile 'com.android.support:design:25.2.0'
 }

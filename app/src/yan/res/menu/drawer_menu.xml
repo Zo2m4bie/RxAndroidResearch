@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/functions"
+            android:title="Functions">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/map"
+                    android:title="map()"/>
+
+                <item android:id="@+id/flatMap"
+                    android:title="flatMap()"/>
+
+                <item android:id="@+id/concatMap"
+                    android:title="concatMap()"/>
+
+                <item android:id="@+id/zip_and_merge"
+                    android:title="zip() and merge()"/>
+                </group>
+            </menu>
+
+        </item>
+        <item android:id="@+id/schedulers"
+            android:title="Schedulers">
+            <menu>
+                <item android:id="@+id/scheduler"
+                    android:title="scheduler"/>
+            </menu>
+        </item>
+    </group>
+</menu>

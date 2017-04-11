@@ -23,8 +23,16 @@
         <item android:id="@+id/schedulers"
             android:title="Schedulers">
             <menu>
-                <item android:id="@+id/scheduler"
-                    android:title="scheduler"/>
+                <!--<item android:id="@+id/io"-->
+                    <!--android:title="Schedulers.io()"/>-->
+                <item android:id="@+id/new_thred"
+                    android:title="Schedulers.newThread()"/>
+                <!--<item android:id="@+id/immediate"-->
+                    <!--android:title="Schedulers.immediate()"/>-->
+                <!--<item android:id="@+id/tempoline"-->
+                    <!--android:title="Schedulers.trampoline()"/>-->
+                <!--<item android:id="@+id/computation"-->
+                    <!--android:title="Schedulers.computation()"/>-->
             </menu>
         </item>
     </group>

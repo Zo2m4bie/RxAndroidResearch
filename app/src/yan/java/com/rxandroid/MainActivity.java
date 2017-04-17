@@ -12,9 +12,14 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.rxandroid.fragment.ComputationFragment;
 import com.rxandroid.fragment.ConcatMapFragment;
 import com.rxandroid.fragment.FlatMapFragment;
+import com.rxandroid.fragment.ImmediateFragment;
+import com.rxandroid.fragment.IoFragment;
 import com.rxandroid.fragment.MapFragment;
+import com.rxandroid.fragment.NewThreadFragment;
+import com.rxandroid.fragment.TrampolineFragment;
 import com.rxandroid.fragment.ZipAndMergeFragment;
 
 public class MainActivity extends AppCompatActivity{
@@ -74,6 +79,26 @@ public class MainActivity extends AppCompatActivity{
                         frag =  ZipAndMergeFragment.newInstance();
                         setFragment(frag);
                         return true;
+//                    case R.id.io:
+//                        frag =  IoFragment.newInstance();
+//                        setFragment(frag);
+//                        return true;
+                    case R.id.new_thred:
+                        frag =  NewThreadFragment.newInstance();
+                        setFragment(frag);
+                        return true;
+//                    case R.id.computation:
+//                        frag =  ComputationFragment.newInstance();
+//                        setFragment(frag);
+//                        return true;
+//                    case R.id.tempoline:
+//                        frag =  TrampolineFragment.newInstance();
+//                        setFragment(frag);
+//                        return true;
+//                    case R.id.immediate:
+//                        frag =  ImmediateFragment.newInstance();
+//                        setFragment(frag);
+//                        return true;
                 }
                 return false;
             }

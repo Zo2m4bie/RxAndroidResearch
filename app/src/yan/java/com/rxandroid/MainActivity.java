@@ -91,10 +91,10 @@ public class MainActivity extends AppCompatActivity{
 //                        frag =  ComputationFragment.newInstance();
 //                        setFragment(frag);
 //                        return true;
-//                    case R.id.tempoline:
-//                        frag =  TrampolineFragment.newInstance();
-//                        setFragment(frag);
-//                        return true;
+                    case R.id.tempoline:
+                        frag =  TrampolineFragment.newInstance();
+                        setFragment(frag);
+                        return true;
 //                    case R.id.immediate:
 //                        frag =  ImmediateFragment.newInstance();
 //                        setFragment(frag);
